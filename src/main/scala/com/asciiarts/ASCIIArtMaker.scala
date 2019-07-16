@@ -567,7 +567,7 @@ object ASCIIArtMaker {
   }
 
   def main(args: Array[String]): Unit = {
-    getAsciiArt("ascii art maker".toUpperCase).foreach(println)
+    getAsciiArt("ASCII Art Maker").foreach(println)
   }
 }
 
