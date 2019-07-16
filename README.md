@@ -10,7 +10,7 @@
 
 ```
 
-## what?
+## What?
 
 This simple application creates an ASCII Art for any input string passed as argument.
 It can also distinguish and give you the output art in upper as well as the lower cases.
@@ -26,7 +26,7 @@ It can also distinguish and give you the output art in upper as well as the lowe
 getAsciiArt("ASCII ART MAKER").foreach(println)
 ```
 
-_The method getAsciiArt() takes a string as input and gives an array of strings as output (that contains the ASCII Art)_
+_The method ```getAsciiArt()``` takes a string as input and gives an array of strings as output (that contains the ASCII Art)_
 
 
 ## To Do
