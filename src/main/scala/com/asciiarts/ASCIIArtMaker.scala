@@ -1,4 +1,4 @@
-package com.asciiart
+package com.asciiarts
 
 class ASCIIArtMaker{
   def setAsciiArt(alphabet:Char):Array[String] = {
