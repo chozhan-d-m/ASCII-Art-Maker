@@ -1,8 +1,8 @@
 package com.asciiarts
 
-class ASCIIArtMaker{
-  def setAsciiArt(alphabet:Char):Array[String] = {
-    var asciiArt: Array[String] = Array("","","","","","","","")
+object ASCIIArtMaker {
+  def setAsciiArt(alphabet: Char): Array[String] = {
+    val asciiArt: Array[String] = Array("", "", "", "", "", "", "", "")
     alphabet match {
       case 'A' =>
         asciiArt(0) = "          "
@@ -264,7 +264,7 @@ class ASCIIArtMaker{
         asciiArt(6) = "       "
         asciiArt(7) = "       "
 
-        //--
+      //--
       case 'a' =>
         asciiArt(0) = "       "
         asciiArt(1) = "       "
@@ -548,11 +548,11 @@ class ASCIIArtMaker{
     }
     asciiArt
   }
-  def getAsciiArt(str:String) :Array[String] = {
-    val asciiArtObj = new ASCIIArtMaker()
-    val art : Array[String] = Array("","","","","","","","")
-    str.foreach( x => {
-      val tempArt = asciiArtObj.setAsciiArt(x)
+
+  def getAsciiArt(str: String): Array[String] = {
+    val art: Array[String] = Array("", "", "", "", "", "", "", "")
+    str.foreach(x => {
+      val tempArt = setAsciiArt(x)
       art(0) = art(0) + tempArt(0)
       art(1) = art(1) + tempArt(1)
       art(2) = art(2) + tempArt(2)
@@ -565,14 +565,11 @@ class ASCIIArtMaker{
     )
     art
   }
-}
-object ASCIIArtMaker {
-  def main(args: Array[String]): Unit = {
-  val asciiArtObj = new ASCIIArtMaker()
 
-    asciiArtObj.getAsciiArt("this is test msg".toUpperCase).foreach(println)
-    asciiArtObj.getAsciiArt("another message").foreach(println)
+  def main(args: Array[String]): Unit = {
+    getAsciiArt("ascii art maker".toUpperCase).foreach(println)
   }
 }
+
 
 
